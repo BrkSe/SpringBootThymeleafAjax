@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Spring Boot Thymeleaf AJAX Burak KUTBAY </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="container" style="min-height: 500px">
+
+    <div class="starter-template">
+        <h1>Veri Girişi</h1>
+
+        <form class="form-horizontal" id="kullaniciForm">
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Ad</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="ad"/>
+                </div>
+            </div>
+
+			<div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label">Soyad</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="soyad"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="submit" id="btn"
+                            class="btn btn-primary btn-lg">Veri Gönder
+                    </button>
+                </div>
+            </div>
+        </form>
+
+	<div id="feedback"></div>
+    </div>
+
+</div>
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/ajax.js"></script>
+
+</body>
+</html>
